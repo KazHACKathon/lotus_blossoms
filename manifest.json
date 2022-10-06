@@ -7,14 +7,22 @@
         "default_popup": "src/index.html",
         "default_icon": "src/static/icon.png"
     },
+    "background": {
+        "scripts": [
+            "src/js/background.js"
+        ]
+    },
     "content_scripts": [
         {
+            "css": [
+                "src/css/content.css"
+            ],
             "matches": [
                 "http://*/*",
                 "https://*/*"
             ],
             "js": [
-                "src/js/index.js"
+                "src/js/content.js"
             ]
         }
     ]
