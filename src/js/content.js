@@ -24,10 +24,10 @@ const inputKeyUpEventHandler = async (i, c, b) => {
 
             c.style.visibility = 'visible'
 
-            if (4 == strength) {
+            if (5 == strength) {
                 strengthText = 'Are you from Pentagon?'
                 c.className = `password-checker__icon ${'verystrong'}`
-            } else if (5 == strength) {
+            } else if (4 == strength) {
                 strengthText = 'FBI will be jealous'
                 c.className = `password-checker__icon ${'strong'}`
             } else if (3 == strength) {
